@@ -19,7 +19,7 @@ implemented as a specialization of the DAL Query interface.
 
 The ``search()`` function support the simplest and most common types
 of queries, returning an SSAResults instance as its results which
-represents the matching imagess from the archive.  The SSAResults
+represents the matching spectra from the archive.  The SSAResults
 supports access to and iterations over the individual records; these
 are provided as SSARecord instances, which give easy access to key
 metadata in the response, such as the position of the spectrum's
@@ -221,8 +221,8 @@ class SSAQuery(query.DALQuery):
 
     In addition to the attributes described below, search parameters can be 
     set generically by name via the 
-    :py:attr:`~pyvo.dal.query.DALQuery.setparam`() 
-    method.  The class attribute, ``std_parameters``, list the parameters 
+    :py:attr:`~pyvo.dal.query.DALQuery.setparam` method.
+    The class attribute, ``std_parameters``, list the parameters 
     defined by the SSA standard.  
 
     The typical function for submitting the query is ``execute()``; however, 
